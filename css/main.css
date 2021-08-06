@@ -1,0 +1,436 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Poppins, sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+/* start header */
+.navbar{
+    box-shadow: 5px 5px 15px 0 rgb(31 31 31 / 7%);
+   z-index: 999999;
+
+}
+.navbar-light .navbar-nav .nav-link {
+    font-size: 0.9rem;
+    color: #282828;
+    transition: all 0.7s;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+ color: #f25454 !important;
+}
+.main-header .carousel-caption h2{
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 4.4rem;
+}
+.main-header .carousel-control-next, .carousel-control-prev{
+    position: static;
+    display: block;
+}
+.main-header .carousel-control-next i{
+    font-size: 2.2rem;
+    background-color:transparent;
+    position: absolute;
+    left: -10px;
+    top: 40%;
+    padding: 15px 25px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    font-weight: 600;
+    transition: all 0.7s;
+}
+
+.main-header .carousel-control-prev i{
+    font-size: 2.2rem;
+    background-color:transparent;
+    position: absolute;
+    left: -10px;
+    top: 48%;
+    padding: 15px 25px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    font-weight: 600;
+    transition: all 0.7s;
+}
+.main-header .carousel-control-prev i:hover,.carousel-control-next i:hover{
+    background-color: #FFFFFF;
+    color:#f25454 ;
+}
+.cogs a{
+    color: #fff;
+    padding: 10px 15px;
+    background-color: #1f2528;
+    position:fixed;
+    top: 20%;
+    left: 0;
+    transition: all 0.7s;
+    z-index: 999;
+}
+.cogs a:hover{
+    background-color: #434343;
+}
+/* end headr */
+/* start sections */
+/* start section one */
+.headings{
+position: relative;
+}
+.headings h3{
+    font-size: 5.5rem;
+    color: #f1f1f1;
+}
+.headings h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+.line{
+    width: 5%;
+    height: 0.8px;
+    background-color:#000;
+    transition: all 0.8s;
+}
+.section-one-intro:hover .line{
+    width: 7%;
+}
+.section-one-intro p{
+    font-size: 1.2rem;
+}
+.section-one-info p{
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.6rem;
+    font-weight: 400;
+}
+.skills .progress-head1{
+    width: 80%;
+}
+.skills .progress-head2{
+    width: 95%;
+}
+.skills .progress-head2{
+    width: 95%;
+}
+.skills .progress-head3{
+    width: 85%;
+}
+.skills .progress-head4{
+    width: 70%;
+}
+.skills .progress{
+    height: 5px;
+}
+.skills .progress-bar{
+    background-color: #F25454;
+}
+.prog1 .progress-bar{
+    width: 80%;
+    animation-name:progressmove1;
+    animation-duration: 2.3s;
+}
+@keyframes progressmove1{
+    from{width: 0%;}
+    to{width: 80%;}
+}
+.prog2 .progress-bar{
+    width: 95%;
+    animation-name:progressmove2;
+    animation-duration: 3s;
+}
+@keyframes progressmove2{
+    from{width: 0%;}
+    to{width: 95%;}
+}
+.prog3 .progress-bar{
+    width: 85%;
+    animation-name:progressmove3;
+    animation-duration: 2.5s;
+}
+@keyframes progressmove3{
+    from{width: 0%;}
+    to{width: 85%;}
+}
+.prog4 .progress-bar{
+    width: 70%;
+    animation-name:progressmove4;
+    animation-duration: 2s;
+}
+@keyframes progressmove4{
+    from{width: 0%;}
+    to{width: 70%;}
+}
+/* end section one */
+/* start section two */
+.section-two-intro:hover .line{
+    width: 7%;
+}
+.section-two-intro p{
+    font-size: 1.2rem;
+}
+.team-member1 .member-img{
+    position: relative;
+    overflow: hidden;
+   
+}
+.team-member1 .member-img img{
+    transition: all 0.8s;
+}
+.team-member1 .member-img:hover img{
+    transform: scale(1.2);
+}
+.team-member1 .icons{
+    background-color: rgba(242, 84, 84, 0.85);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.7s;
+}
+.team-member1 .icons:hover{
+    opacity: 1;
+}
+.team-member1 .icons i{
+    color: #fff;
+    margin: 0 15px;
+}
+.team-member1 .member-info h2{
+  font-size: 1rem;
+  padding-top: 15px;
+  transition: all 0.7s;
+}
+.team-member1 .member-info p{
+    font-size: 0.9rem;
+}
+.team-member1 .member-info h2:hover{
+    color: #f25454;
+}
+.section-two .send-ideas a{
+    background-color: #f25454;
+    color: #fff;
+}
+.section-two .send-ideas a:hover{
+    background-color: #F38383;
+}
+/* end section two */
+/* start section three */
+.section-three{
+    background-color: #FAFAFA;
+}
+.section-three-intro:hover .line{
+    width: 7%;
+}
+.service1 .icon i{
+    color: #f25454;
+    font-size: 2rem;
+}
+.service1 .service-text h3{
+    font-size: 1.2rem;
+    transition: all 0.7s;
+}
+ .service1:hover h3{
+    color: #f25454;
+}
+/* end section three */
+/* start section four */
+.section-four-intro:hover .line{
+    width: 7%;
+}
+.section-four .carousel{
+    width: 100%;
+    padding: 40px 0;
+}
+.section-four .carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+}
+.section-four .carousel-item img{
+    width: 150px;
+    height: 150px;
+}
+.client-info p{
+    font-size: 1.6rem;
+    color: #666666;
+    font-weight: 400;
+}
+.client-info h3{
+    color: #333;
+}
+.client-info span{
+    color: #666666;
+}
+/* end section four */
+/* start section five */
+.section-five{
+    background-color: #FAFAFA;
+    margin-top: 5rem;
+}
+.section-five-intro:hover .line{
+    width: 7%;
+}
+.section-five-info h2{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #282828;
+}
+.fa-ul i{
+    font-size: 2.5rem;
+    color: #f25454;
+    margin-left: -3rem;
+}
+.section-five-info .fa-ul h3{
+    font-size: 1.1rem;
+    transition: all 0.7s;
+}
+.section-five-info .fa-ul .hover:hover h3{
+    color: #f25454;
+}
+.section-five-info .fa-ul  a{
+    color: #666;
+    transition: all 0.7s;
+}
+.section-five-info .hover a:hover{
+    text-decoration: none;
+    color: #f25454;
+}
+.form input {
+    padding: 1.5rem;
+}
+.form .btn{
+    transition: all 0.7s;
+    border: transparent;
+    padding: 15px 20px;
+}
+ .form .btn:hover{
+background-color: #F38383;
+}
+/* end section five */
+/* start section six */
+.secton-six {
+    background-image: url(../images/dotted-map.png);
+    background-size:contain;
+    background-color: #222;
+    position: relative;
+}
+.secton-six  h2{
+   font-size: 1.25rem;
+   font-weight: 600;
+   color: #fff;
+}
+.secton-six ul{
+    margin-left: -40px;
+}
+.secton-six a{
+    color: #b0b0b0;
+    text-decoration: none;
+    transition: all 0.7s;
+}
+.secton-six a:hover{
+    Color:#f25454;
+  }
+.secton-six .product1 p{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #b0b0b0;
+ }
+.secton-six ul li{
+    padding: 3px 0;
+}
+.product4 .tags a{
+    border: 1px solid #b0b0b0;
+    transition: all 0.7s;
+}
+.tags .tag {
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    padding: 2px 10px;
+    font-size: 13px;
+    border-radius: 3px;
+
+}
+.tags a:hover{
+    border: 1px solid #f25454;
+}
+.top{
+    background: rgba(242, 84, 84, 0.5);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.7s;
+    position: absolute;
+    top:-7%;
+    left: 50%;
+    transform: translatex(-50%);
+}
+.top i{
+    color: #fff;
+    
+}
+.top:hover{
+    background-color: #F25454;
+}
+/* end section six */
+/* end sections */
+/* start footer */
+footer{
+    background-color: #1A1A1A;
+}
+footer a{
+    color: #fff;
+    transition: all 0.7s;
+}
+footer a:hover{
+    Color:#f25454;
+}
+footer p a:hover{
+    text-decoration: none;
+}
+footer .footer-social a{
+    margin:0 10px
+}
+/* end footer */
+
+
+@media screen and (max-width:600px){
+    html{
+        font-size: 14px;
+    }
+    .main-header .carousel-control-next i{
+        top: 32%;
+    }
+    .main-header .carousel-control-prev i{
+        top: 55%;
+    }
+    .cogs {
+       display: none;
+    }
+    .skills .progress-head1{
+        width: 80%;
+    }
+    .skills .progress-head2{
+        width: 95%;
+    }
+    .skills .progress-head2{
+        width: 95%;
+    }
+    .skills .progress-head3{
+        width: 85%;
+    }
+    .skills .progress-head4{
+        width: 70%;
+    }
+    .top{
+        top:-30px
+    }
+}
